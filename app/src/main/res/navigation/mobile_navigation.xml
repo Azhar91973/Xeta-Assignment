@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/navigation_activity">
+
+    <fragment
+        android:id="@+id/navigation_activity"
+        android:name="com.example.xetaassignment.Fragment.ActivityFragment"
+        android:label="@string/title_activity"
+        tools:layout="@layout/fragment_activity" >
+        <action
+            android:id="@+id/action_navigation_activity_to_navigation_goal"
+            app:destination="@id/navigation_goal" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/navigation_goal"
+        android:name="com.example.xetaassignment.Fragment.GoalFragment"
+        android:label="@string/title_goal"
+        tools:layout="@layout/fragment_goal" >
+        <action
+            android:id="@+id/action_navigation_goal_to_navigation_activity"
+            app:destination="@id/navigation_activity" />
+        <action
+            android:id="@+id/action_navigation_goal_to_navigation_camera"
+            app:destination="@id/navigation_camera" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/navigation_camera"
+        android:name="com.example.xetaassignment.Fragment.CameraFragment"
+        android:label="@string/title_camera"
+        tools:layout="@layout/fragment_camera" >
+        <action
+            android:id="@+id/action_navigation_camera_to_navigation_goal"
+            app:destination="@id/navigation_goal" />
+        <action
+            android:id="@+id/action_navigation_camera_to_navigation_feed"
+            app:destination="@id/navigation_feed" />
+    </fragment>
+    <fragment
+        android:id="@+id/navigation_feed"
+        android:name="com.example.xetaassignment.Fragment.FeedFragment"
+        android:label="@string/title_feed"
+        tools:layout="@layout/fragment_feed" >
+        <action
+            android:id="@+id/action_navigation_feed_to_navigation_camera"
+            app:destination="@id/navigation_camera" />
+        <action
+            android:id="@+id/action_navigation_feed_to_navigation_person"
+            app:destination="@id/navigation_person" />
+    </fragment>
+    <fragment
+        android:id="@+id/navigation_person"
+        android:name="com.example.xetaassignment.Fragment.PersonFragment"
+        android:label="@string/title_Person"
+        tools:layout="@layout/fragment_person" >
+        <action
+            android:id="@+id/action_navigation_person_to_navigation_feed"
+            app:destination="@id/navigation_feed" />
+    </fragment>
+</navigation>

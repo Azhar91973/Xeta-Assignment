@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:id="@+id/Food_Info_Container"
+    android:layout_height="317dp" >
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentTop="true"
+            android:scaleType="centerCrop"
+            android:src="@raw/img2" />
+
+        <LinearLayout
+            android:id="@+id/textViewTitle"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:background="#80595656"
+            android:orientation="vertical">
+            <LinearLayout
+                android:id="@+id/Food_Info_Back_Btn"
+                android:layout_width="wrap_content"
+                android:layout_height="44dp"
+                android:layout_marginTop="31dp"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/imageButton2"
+                    android:layout_width="12dp"
+                    android:layout_height="20.5dp"
+                    android:layout_marginStart="8.5dp"
+                    android:layout_marginTop="12dp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:srcCompat="@raw/back_icon" />
+                <TextView
+                    android:id="@+id/label"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="5.5dp"
+                    android:layout_marginTop="11dp"
+                    android:gravity="top"
+                    android:text="@string/Food_Info_Back_btn"
+                    android:textAppearance="@style/Food_Info_Back_btn" />
+
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="108dp"
+                android:layout_marginTop="141dp">
+
+                <TextView
+                    android:id="@+id/tagline"
+                    android:layout_width="wrap_content"
+                    android:layout_height="18dp"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginTop="18dp"
+
+                    android:text="@string/Food_Info_Headline"
+                    android:textAppearance="@style/Food_Info_Headline"
+                    android:gravity="top"
+                    />
+
+                <TextView
+                    android:id="@+id/display"
+                    android:layout_width="wrap_content"
+                    android:layout_height="34dp"
+                    android:layout_below="@+id/tagline"
+                    android:layout_alignParentStart="true"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="6dp"
+                    android:gravity="top"
+                    android:text="@string/Food_Info_MainHead"
+                    android:textAppearance="@style/Food_Info_MainHead" />
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="70.54dp"
+                    android:layout_height="76.69dp"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginTop="4dp"
+                    android:layout_marginEnd="36.89dp"
+                    app:cardCornerRadius="15dp"
+                    app:cardPreventCornerOverlap="true"
+                    app:cardElevation="0dp"
+                    android:backgroundTint="#658B8B8B"  >
+
+                    <TextView
+                        android:id="@+id/some_id"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="26.51dp"
+                        android:layout_marginTop="14.1dp"
+                        android:backgroundTint="#00000000"
+                        android:text="@string/Food_Info_num"
+                        android:textAppearance="@style/Food_Info_num" />
+
+                    <TextView
+                        android:id="@+id/subtitle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="16.72dp"
+                        android:layout_marginTop="54.19dp"
+                        android:backgroundTint="#00000000"
+                        android:text="@string/Food_Info_numsubtitle"
+                        android:textAppearance="@style/Food_Info_numsubtitle" />
+
+
+                </androidx.cardview.widget.CardView>
+            </RelativeLayout>
+        </LinearLayout>
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>

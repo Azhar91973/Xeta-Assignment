@@ -1,0 +1,314 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:elevation="4dp"
+    app:cardCornerRadius="10dp">
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TableRow
+            android:id="@+id/Row1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#FDF7F7">
+
+            <TextView
+                android:id="@+id/Row1_Column1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:drawableEnd="@drawable/cell_border"
+
+                android:gravity="end"
+                android:padding="8dp"
+                tools:ignore="UseCompatTextViewDrawableXml" />
+
+            <TextView
+                android:id="@+id/Row1_Column2"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:fontFamily="@font/inter_regular"
+                android:gravity="center"
+                android:padding="8dp"
+                android:text="Per Serve"
+                android:textColor="@color/black" />
+
+            <TextView
+                android:id="@+id/Row1_Column3"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:padding="8dp"
+                android:text="Per 250gm"
+                android:textColor="@color/black" />
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/Row2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#FDF7F7">
+
+            <TextView
+
+                android:id="@+id/Row2_Column1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:fontFamily="@font/inter_regular"
+                android:gravity="center"
+                android:padding="8dp"
+                android:text="Energy"
+                android:textColor="@color/black"
+                android:textSize="10sp" />
+
+            <TextView
+                android:id="@+id/Row2_Column2"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:fontFamily="@font/inter_regular"
+                android:gravity="center"
+                android:padding="8dp"
+                android:textColor="#707070"
+                android:text="415 J"
+                android:textSize="10sp" />
+
+            <TextView
+                android:id="@+id/Row2_Column3"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:fontFamily="@font/inter_regular"
+                android:gravity="center"
+                android:textColor="#707070"
+                android:padding="8dp"
+                android:text="600 J"
+                android:textSize="10sp" />
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/Row3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#FDF7F7">
+
+            <TextView
+                android:id="@+id/Row3_Column1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:fontFamily="@font/inter_regular"
+                android:gravity="center"
+                android:padding="8dp"
+                android:text="Protein"
+                android:textColor="@color/black"
+                android:textSize="10sp" />
+
+            <TextView
+                android:id="@+id/Row3_Column2"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:fontFamily="@font/inter_regular"
+                android:gravity="center"
+                android:padding="8dp"
+                android:textColor="#707070"
+                android:text="2g"
+                android:textSize="10sp" />
+
+            <TextView
+                android:id="@+id/Row3_Column3"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:fontFamily="@font/inter_regular"
+                android:gravity="center"
+                android:textColor="#707070"
+                android:padding="8dp"
+                android:text="6g"
+                android:textSize="10sp" />
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/Row4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#FDF7F7">
+
+            <TextView
+                android:id="@+id/Row4_Column1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:fontFamily="@font/inter_regular"
+                android:gravity="center"
+                android:padding="8dp"
+                android:text="Trans Fat"
+                android:textColor="@color/black"
+                android:textSize="10sp" />
+
+            <TextView
+                android:id="@+id/Row4_Column2"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:fontFamily="@font/inter_regular"
+                android:gravity="center"
+                android:textColor="#707070"
+                android:padding="8dp"
+                android:text="0.5g"
+                android:textSize="10sp" />
+
+            <TextView
+                android:id="@+id/Row4_Column3"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:fontFamily="@font/inter_regular"
+                android:gravity="center"
+                android:textColor="#707070"
+                android:padding="8dp"
+                android:text="1g"
+                android:textSize="10sp" />
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/Row5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#FDF7F7">
+
+            <TextView
+                android:id="@+id/Row5_Column1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:fontFamily="@font/inter_regular"
+                android:gravity="center"
+                android:padding="8dp"
+                android:text="Saturated Fat"
+                android:textColor="@color/black"
+                android:textSize="10sp" />
+
+            <TextView
+                android:id="@+id/Row5_Column2"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:fontFamily="@font/inter_regular"
+                android:gravity="center"
+                android:padding="8dp"
+                android:textColor="#707070"
+                android:text="0.8g"
+                android:textSize="10sp" />
+
+            <TextView
+                android:id="@+id/Row5_Column3"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:fontFamily="@font/inter_regular"
+                android:gravity="center"
+                android:padding="8dp"
+                android:textColor="#707070"
+                android:text="0.8g"
+                android:textSize="10sp" />
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/Row6"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#FDF7F7">
+
+            <TextView
+                android:id="@+id/Row6_Column1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:fontFamily="@font/inter_regular"
+                android:gravity="center"
+                android:padding="8dp"
+                android:text="Carbohydrates"
+                android:textColor="@color/black"
+                android:textSize="10sp" />
+
+            <TextView
+                android:id="@+id/Row6_Column2"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:fontFamily="@font/inter_regular"
+                android:gravity="center"
+                android:padding="8dp"
+                android:textColor="#707070"
+                android:text="3g"
+                android:textSize="10sp" />
+
+            <TextView
+                android:id="@+id/Row6_Column3"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:fontFamily="@font/inter_regular"
+                android:gravity="center"
+                android:padding="8dp"
+                android:textColor="#707070"
+                android:text="5.5g"
+                android:textSize="10sp" />
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/Row7"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#FDF7F7">
+
+            <TextView
+                android:id="@+id/Row7_Column1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:fontFamily="@font/inter_regular"
+                android:gravity="center"
+                android:padding="8dp"
+                android:text="Fibre"
+                android:textColor="@color/black"
+                android:textSize="10sp" />
+
+            <TextView
+                android:id="@+id/Row7_Column2"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:fontFamily="@font/inter_regular"
+                android:gravity="center"
+                android:padding="8dp"
+                android:textColor="#707070"
+                android:text="4g"
+                android:textSize="10sp" />
+
+            <TextView
+                android:id="@+id/Row7_Column3"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:fontFamily="@font/inter_regular"
+                android:gravity="center"
+                android:padding="8dp"
+                android:textColor="#707070"
+                android:text="7.2g"
+                android:textSize="10sp" />
+        </TableRow>
+
+
+    </TableLayout>
+</androidx.cardview.widget.CardView>

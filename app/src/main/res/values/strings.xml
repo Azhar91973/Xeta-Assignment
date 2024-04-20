@@ -1,0 +1,50 @@
+<resources>
+    <string name="app_name">Xeta Assignment</string>
+    <string name="title_activity">Activity</string>
+    <string name="title_goal">Goal</string>
+    <string name="title_camera">Camera</string>
+    <string name="title_feed">Feed</string>
+    <string name="title_Person">Person</string>
+    <!-- TODO: Remove or change this placeholder text -->
+
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title">Dietsnap</string>
+    <string name="curr_day_tv">Today</string>
+    <string name="D_DD_MM">Thursday, 22nd Oct</string>
+    <string name="set_goal_tv">SET GOAL!</string>
+    <string name="diet_tv">Diet Pts</string>
+    <string name="fitness_tv">Exercise Pts</string>
+    <string name="cal_tv">1500</string>
+    <string name="days_tv">3/5</string>
+    <string name="health_tv">88</string>
+    <string name="call_text">Cal</string>
+    <string name="days_text">Days</string>
+    <string name="health_text">Health Score</string>
+    <string name="goal_tv">Your Goals</string>
+    <string name="goal_card_title">Keto Weight loss plan</string>
+    <string name="goal_card_subtitle">Current Major Goal</string>
+    <string name="progress">73%</string>
+    <string name="explore_tv">Explore</string>
+    <string name="explore_title">Find Diets</string>
+    <string name="explore_subtitle">Find premade diets according to your cuisine</string>
+    <string name="explore2_title">Find Nutritionist</string>
+    <string name="explore2_subtitle">Get customized diets to achieve your health goal</string>
+    <string name="Food_Info_Back_btn">Back</string>
+    <string name="Food_Info_Headline">Food Information</string>
+    <string name="Food_Info_MainHead">Fried Chicken</string>
+    <string name="Food_Info_num">71</string>
+    <string name="Food_Info_numsubtitle">out of 100</string>
+    <string name="Food_Info_Description">Description</string>
+    <string name="Food_Info_DescriptionText">DescriptionText</string>
+    <string name="Food_Info_NutrientTxt">Macro Nutrients</string>
+    <string name="Food_Info_Fact_Heading">Facts</string>
+    <string name="Food_Info_Fact_SubHeading">Did you know?</string>
+    <string name="Food_Info_Fact_Description">Fact Description</string>
+    <string name="Food_Info_chicken_tan">Chicken Tandoor</string>
+    <string name="Food_Info_Similar_Item_Head">Similar Items</string>
+    <string name="notification">Notification</string>
+    <string name="star">Star</string>
+    <string name="message">Message</string>
+
+
+</resources>

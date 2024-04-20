@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/activity"
+        android:icon="@raw/activity_icon"
+        android:title="@string/title_activity" />
+
+    <item
+        android:id="@+id/goal"
+        android:icon="@raw/goal_icon"
+        android:title="@string/title_goal" />
+
+    <item
+        android:id="@+id/camera"
+        android:icon="@raw/camera_icon"
+        android:title="@string/title_camera" />
+
+    <item
+        android:id="@+id/feed"
+        android:icon="@raw/feed_icon"
+        android:title="@string/title_feed" />
+
+    <item
+        android:id="@+id/person"
+        android:icon="@raw/person_icon"
+        android:title="@string/title_Person" />
+
+
+</menu>

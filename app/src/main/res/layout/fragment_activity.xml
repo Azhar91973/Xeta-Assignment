@@ -1,0 +1,467 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Fragment.ActivityFragment">
+
+    <RelativeLayout
+        android:id="@+id/rectangle_4"
+        android:layout_width="0dp"
+        android:layout_height="96dp"
+        android:background="#FFFFFF"
+        android:elevation="3dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/header_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="21dp"
+            android:layout_marginTop="52dp"
+            android:text="@string/title"
+            android:textAppearance="@style/title"
+            android:lineSpacingExtra="17sp"
+            android:gravity="top" />
+
+        <ImageButton
+            android:id="@+id/notification_iv"
+            android:layout_width="29.05dp"
+            android:layout_height="29.05dp"
+            android:layout_marginEnd="16dp"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="52dp"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:background="@color/white"
+            android:src="@drawable/message_icon"
+            android:contentDescription="@string/message" />
+
+        <ImageButton
+            android:id="@+id/start_iv"
+            android:layout_width="14.56dp"
+            android:layout_height="21.84dp"
+            android:layout_marginEnd="16dp"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="52dp"
+            android:background="@color/white"
+            android:layout_toStartOf="@id/notification_iv"
+            android:layout_centerVertical="true"
+            android:src="@drawable/star_icon"
+            android:contentDescription="@string/star" />
+
+        <ImageButton
+            android:id="@+id/message_iv"
+            android:layout_width="17.92dp"
+            android:layout_height="21.84dp"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="52dp"
+            android:layout_marginEnd="16dp"
+            android:background="@color/white"
+            android:layout_toStartOf="@id/start_iv"
+            android:src="@drawable/notification_icon"
+            android:contextClickable="true"
+            android:contentDescription="@string/notification" />
+
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/rectangle_4"
+        app:layout_constraintVertical_bias="0.0">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <RelativeLayout
+                android:id="@+id/group_3534"
+                android:layout_width="137dp"
+                android:layout_height="44dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:gravity="center"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <TextView
+                    android:id="@+id/curr_day_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="28dp"
+                    android:layout_alignParentTop="true"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="2dp"
+                    android:gravity="center_horizontal|top"
+                    android:lineSpacingExtra="6sp"
+                    android:text="@string/curr_day_tv"
+                    android:textAppearance="@style/curr_day_tv"
+                    android:translationY="-3.11sp" />
+
+                <TextView
+                    android:id="@+id/D_DD_MM"
+                    android:layout_width="wrap_content"
+                    android:layout_height="20dp"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginTop="21dp"
+                    android:gravity="center"
+                    android:lineSpacingExtra="2sp"
+                    android:text="@string/D_DD_MM"
+                    android:textAppearance="@style/D_DD_MM"
+                    android:translationY="-0.92sp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/relativeLayout"
+                android:layout_width="221dp"
+                android:layout_height="221dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginTop="24dp"
+                android:background="@drawable/ellipse"
+                android:elevation="200dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/group_3534">
+
+                <View
+                    android:id="@+id/ellipse_118"
+                    android:layout_width="10dp"
+                    android:layout_height="9dp"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginStart="106dp"
+                    android:background="@drawable/dot" />
+
+                <RelativeLayout
+                    android:id="@+id/ellipse_117"
+                    android:layout_width="177dp"
+                    android:layout_height="177dp"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginStart="22dp"
+                    android:layout_marginTop="22dp"
+                    android:background="@drawable/small_ellipse">
+
+                    <View
+                        android:id="@+id/ellipse_119"
+                        android:layout_width="10dp"
+                        android:layout_height="9dp"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginStart="84dp"
+                        android:background="@drawable/dot2"
+                        android:elevation="3dp" />
+
+                    <TextView
+                        android:id="@+id/set_goal_tv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="0dp"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentTop="true"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentBottom="true"
+                        android:layout_marginStart="25dp"
+                        android:layout_marginTop="74dp"
+                        android:layout_marginEnd="25dp"
+                        android:layout_marginBottom="74dp"
+                        android:gravity="center_horizontal"
+                        android:lineSpacingExtra="1sp"
+                        android:text="@string/set_goal_tv"
+                        android:textAppearance="@style/set_goal_tv"
+                        android:translationY="-0.69sp" />
+
+                </RelativeLayout>
+            </RelativeLayout>
+
+            <LinearLayout
+                android:id="@+id/linearLayout"
+                android:layout_width="wrap_content"
+                android:layout_height="27dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginTop="8dp"
+                android:orientation="horizontal"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/relativeLayout">
+
+                <View
+                    android:id="@+id/diet_iv"
+                    android:layout_width="26dp"
+                    android:layout_height="27dp"
+
+                    android:background="@drawable/diet_pts_icon"
+                    android:elevation="3dp" />
+
+                <TextView
+                    android:id="@+id/diet_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:layout_marginStart="8.37dp"
+                    android:layout_marginTop="4dp"
+                    android:gravity="top"
+                    android:text="@string/diet_tv"
+                    android:textAppearance="@style/diet_tv" />
+
+                <View
+                    android:id="@+id/fitness_iv"
+                    android:layout_width="27dp"
+                    android:layout_height="26dp"
+                    android:layout_marginStart="15dp"
+                    android:background="@drawable/exercise_pts_icon"
+                    android:elevation="3dp" />
+
+                <TextView
+                    android:id="@+id/fitness_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="4dp"
+                    android:gravity="top"
+                    android:text="@string/fitness_tv"
+                    android:textAppearance="@style/fitness_tv" />
+            </LinearLayout>
+
+
+            <RelativeLayout
+                android:id="@+id/relativeLayout2"
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_marginTop="10dp"
+                android:gravity="center"
+                android:orientation="horizontal"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.496"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/linearLayout">
+
+                <LinearLayout
+                    android:id="@+id/linearLayout4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentBottom="true"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/cal_tv"
+                        android:layout_width="35dp"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:lineSpacingExtra="3sp"
+                        android:text="@string/cal_tv"
+                        android:textAppearance="@style/cal_tv"
+                        android:translationY="-1.42sp"
+                        app:layout_constraintHorizontal_bias="0.271"
+                        app:layout_constraintStart_toStartOf="parent" />
+
+                    <TextView
+                        android:id="@+id/call_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/call_text"
+                        android:textAppearance="@style/call_text" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/linearLayout3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginStart="66dp"
+                    android:layout_toEndOf="@+id/linearLayout4"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/days_tv"
+                        android:layout_width="24dp"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="@string/days_tv"
+                        android:textAppearance="@style/days_tv" />
+
+                    <TextView
+                        android:id="@+id/days_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/days_text"
+                        android:textAppearance="@style/days_text" />
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:id="@+id/linearLayout2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginStart="31dp"
+                    android:layout_toEndOf="@+id/linearLayout3"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+
+                    <TextView
+                        android:id="@+id/health_tv"
+                        android:layout_width="35dp"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="@string/health_tv"
+                        android:textAppearance="@style/health_tv" />
+
+                    <TextView
+                        android:id="@+id/health_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/health_text"
+                        android:textAppearance="@style/health_text" />
+                </LinearLayout>
+
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/group_1425"
+                android:layout_width="28dp"
+                android:layout_height="10dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginTop="36dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.498"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/relativeLayout2">
+
+                <ImageView
+                    android:id="@+id/first_scr_iv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:src="@drawable/first_scr_dot"
+                    app:layout_constraintEnd_toEndOf="parent" />
+
+                <ImageView
+                    android:id="@+id/second_scr_iv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:layout_toEndOf="@+id/first_scr_iv"
+                    android:src="@drawable/second_scr_dot"
+                    app:layout_constraintEnd_toEndOf="parent" />
+
+            </RelativeLayout>
+
+            <ImageButton
+                android:id="@+id/imageButton"
+                android:layout_width="8dp"
+                android:layout_height="10dp"
+                android:layout_marginStart="42dp"
+                android:layout_marginTop="172dp"
+                android:background="@color/white"
+                android:src="@drawable/next_icon"
+                app:layout_constraintHorizontal_bias="0.522"
+                app:layout_constraintStart_toEndOf="@+id/relativeLayout"
+                app:layout_constraintTop_toTopOf="parent"/>
+
+            <TextView
+                android:id="@+id/goal_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginStart="14dp"
+                android:layout_marginTop="436dp"
+
+                android:gravity="top"
+                android:lineSpacingExtra="-1sp"
+                android:text="@string/goal_tv"
+                android:textAppearance="@style/goal_tv"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/goal_card_recyclerview"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="14dp"
+                android:layout_marginTop="29dp"
+                android:layout_marginEnd="14dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/goal_tv" />
+
+
+            <TextView
+                android:id="@+id/explore_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentBottom="true"
+                android:gravity="top"
+                android:layout_marginStart="14dp"
+                android:layout_marginTop="22dp"
+                android:lineSpacingExtra="-1sp"
+                android:text="@string/explore_tv"
+                android:textAppearance="@style/explore_tv"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/goal_card_recyclerview" />
+
+            <include
+                android:id="@+id/explore_card1"
+                layout="@layout/explore_card_design"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="14dp"
+                android:layout_marginEnd="14dp"
+                android:layout_marginTop="29dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/explore_tv" />
+
+            <include
+                android:id="@+id/explore_card2"
+                layout="@layout/explore_card2_design"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="14dp"
+                android:layout_marginEnd="14dp"
+                android:layout_marginTop="1dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/explore_card1" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="32.47dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/explore_card2" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

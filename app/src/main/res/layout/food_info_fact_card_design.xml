@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:backgroundTint="#F8B944"
+    app:cardCornerRadius="15dp"
+    android:layout_height="wrap_content">
+ <RelativeLayout
+     android:layout_width="match_parent"
+     android:layout_height="match_parent">
+
+     <TextView
+         android:id="@+id/Food_Info_Fact_Heading_tv"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_alignParentStart="true"
+         android:layout_marginStart="56dp"
+         android:layout_marginTop="27dp"
+         android:gravity="top"
+         android:text="@string/Food_Info_Fact_SubHeading"
+         android:textAppearance="@style/Food_Info_Fact_SubHeading" />
+
+     <TextView
+         android:id="@+id/Food_Info_Fact_Description_tv"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_below="@+id/Food_Info_Fact_Heading_tv"
+         android:layout_alignParentStart="true"
+         android:layout_marginBottom="27dp"
+         android:layout_marginStart="16dp"
+         android:layout_marginTop="17dp"
+         android:gravity="top"
+         android:text="@string/Food_Info_Fact_Description"
+         android:textAppearance="@style/Food_Info_Fact_Description" />
+ </RelativeLayout>
+
+
+</androidx.cardview.widget.CardView>
